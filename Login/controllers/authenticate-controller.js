@@ -12,26 +12,23 @@ module.exports.authenticate = function(req, res) {
     function(error, results, fields) {
       if (error) {
         return res.status(500).json({
-          status: false,
           message: 'there are some error with query'
         });
       } else {
-        if (results.length > 0) {
+        if (results && results.length > 0) {
           decryptedString = cryptr.decrypt(results[0].password);
           if (password == decryptedString) {
             return res.status(200).json({
-              status: true,
               message: 'successfully authenticated'
             });
           } else {
             return res.status(403).json({
-              status: false,
               message: 'Username and password does not match'
             });
           }
         } else {
-          return res.status(403).res.json({
-            status: false,
+          connection.end();
+          return res.status(403).json({
             message: 'Username does not exits'
           });
         }

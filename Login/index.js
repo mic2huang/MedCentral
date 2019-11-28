@@ -22,7 +22,6 @@ app.get('/login.html', function(req, res) {
 app.post('/api/register', registerController.register);
 app.post('/api/authenticate', authenticateController.authenticate);
 
-console.log(authenticateController);
 app.post('/controllers/register-controller', registerController.register);
 app.post(
   '/controllers/authenticate-controller',
