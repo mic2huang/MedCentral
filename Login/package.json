@@ -10,7 +10,7 @@
   "keywords": [
     "login"
   ],
-  "author": "Michelle Thuong Huynh (huynhthu@oregonstate.edu)",
+  "author": "Adam Clayman, Ricardo Cousins, Thuong Michelle Huynh, Rachel Schlick, and Hao-yuan Tung",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
