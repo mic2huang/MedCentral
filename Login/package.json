@@ -1,11 +1,11 @@
 {
-  "name": "login",
+  "name": "index",
   "version": "1.0.0",
-  "description": "Login authentication",
+  "description": "Register and Login authentication",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon login.js"
+    "start": "nodemon index.js"
   },
   "keywords": [
     "login"
@@ -17,7 +17,9 @@
     "cryptr": "^6.0.1",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
-    "mysql": "^2.17.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.1"
   }
 }

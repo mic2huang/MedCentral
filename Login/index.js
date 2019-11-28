@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 
 var connection = require('./config');
 var app = express();
+app.use(express.static('.'));
 
 var authenticateController = require('./controllers/authenticate-controller');
 var registerController = require('./controllers/register-controller');
@@ -14,17 +15,14 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/' + 'index.html');
 });
 
-app.get('/login.html', function(req, res) {
-  res.sendFile(__dirname + '/' + 'login.html');
+app.get('/login', function(req, res) {
+  res.sendFile(__dirname + '/' + 'index.html');
 });
 
 /* route to handle login and registration */
 app.post('/api/register', registerController.register);
 app.post('/api/authenticate', authenticateController.authenticate);
 
-app.post('/controllers/register-controller', registerController.register);
-app.post(
-  '/controllers/authenticate-controller',
-  authenticateController.authenticate
-);
+app.post('/register', registerController.register);
+app.post('/authenticate', authenticateController.authenticate);
 app.listen(3000);
