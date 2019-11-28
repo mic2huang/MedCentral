@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <form action="/controllers/register-controller" method="POST">
+      username: <input type="text" name="username" />
+
+      Paswword: <input type="password" name="password" /> Email:
+      <input type="text" name="email" />
+      <select name="type">
+        <option value="patient">Patient</option>
+        <option value="hcp">Healthcare Provider</option>
+        <option value="reseacher">Reseacher</option>
+      </select>
+      <input type="submit" value="Create" />
+    </form>
+  </body>
+</html>
