@@ -1,0 +1,20 @@
+{
+  "name": "cs361_group26_MedCentral",
+  "version": "1.0.0",
+  "description": "CS361_Final_Project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AdamClayman_RicardoCousins_ThuongMichelleHuynh_RachelSchlick_Hao-yuanTung",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "cryptr": "^6.0.1",
+    "express": "^4.13.2",
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.11.3",
+    "forever": "^1.0.0",
+    "mysql": "^2.8.0"
+  }
+}

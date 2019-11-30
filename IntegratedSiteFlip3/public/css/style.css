@@ -1,0 +1,116 @@
+table {
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid black;
+}
+
+th, td {
+	padding: 7px;
+}
+
+div ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #77896C;
+}
+
+div li {
+	float: left;
+}
+
+div li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+div li a:hover {
+	background-color: #46523C;
+}
+
+form {
+	display: inline-block;
+}
+
+div.loginText {
+	text-align: center;
+}
+
+div.loginForm {
+	text-align: center;
+}
+
+.siteName {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: #8FA880;
+	cursor: default;
+}
+
+.active {
+	background-color: #8FA880;
+}
+
+.button {
+	background-color: #77896C;
+	border: none;
+	color: white;
+	padding: 8px 14px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.button:hover {
+	background-color: #46523C;
+}
+
+.contactForm {
+	display: inline-block;
+}
+
+.contactForm textarea {
+	width: 300px;
+	height: 100px;
+	border-radius: 4px;
+}
+
+input[type=text], input[type=password], select {
+  padding: 4px 2px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+#filterDropDown {
+	padding: 6px 2px;
+}
+
+#dropDown {
+	padding: 4px 2px;
+}
+
+#messageColumn {
+	width: 400px;
+}
