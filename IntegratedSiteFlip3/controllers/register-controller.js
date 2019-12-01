@@ -3,9 +3,9 @@ var express = require('express');
 var connection = require('./../config');
 // cryptr = new Cryptr('myTotalySecretKey');
 
-module.exports.register = function (req, res) {
+module.exports.register = function(req, res) {
   var username = req.body.username;
-  connection.query('SELECT * FROM user WHERE username = ?', username, function (
+  connection.query('SELECT * FROM user WHERE username = ?', username, function(
     error,
     rows
   ) {
@@ -23,7 +23,7 @@ module.exports.register = function (req, res) {
         password: password,
         type: req.body.type
       };
-      connection.query('INSERT INTO user SET ?', user, function (
+      connection.query('INSERT INTO user SET ?', user, function(
         error,
         results,
         fields

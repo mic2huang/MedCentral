@@ -2,14 +2,14 @@
 //cryptr = new Cryptr('myTotalySecretKey');
 
 var connection = require('./../config');
-module.exports.authenticate = function (req, res) {
+module.exports.authenticate = function(req, res) {
   var username = req.body.username;
   var password = req.body.password;
 
   connection.query(
     'SELECT * FROM user WHERE username = ?',
     [username],
-    function (error, results, fields) {
+    function(error, results, fields) {
       if (error) {
         return res.status(500).json({
           message: 'there are some error with query'
