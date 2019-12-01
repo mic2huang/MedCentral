@@ -2,9 +2,9 @@ var mysql = require('mysql');
 // create connection to database
 var connection = mysql.createConnection({
   host: 'classmysql.engr.oregonstate.edu',
-  user: 'cs361_huynhthu',
-  password: '5705',
-  database: 'cs361_huynhthu'
+  user: 'cs361_claymana',
+  password: '2032',
+  database: 'cs361_claymana'
 });
 
 connection.connect(function(err) {
