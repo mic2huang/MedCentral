@@ -11,9 +11,12 @@ DROP TABLE IF EXISTS researcher;
 DROP TABLE IF EXISTS user;
 
 CREATE TABLE user (
-    id INT NOT NULL AUTO_INCREMENT,
+    id INT(11) NOT NULL AUTO_INCREMENT,
     username VARCHAR(30) NOT NULL,
     pword VARCHAR(30) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    created TIMESTAMP NOT NULL DEFAULT current_timestamp(),
+    user_type enum(`patient`, `hcp`,`researcher`) NOT NULL,
     PRIMARY KEY (id)
 );
 
